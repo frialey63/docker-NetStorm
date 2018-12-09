@@ -5,7 +5,7 @@
 #
 # docker build -t netstorm .
 # xhost +
-# docker run -i --rm --net=host -v /tmp/.X11-unix/X0:/tmp/.X11-unix/X0 -v /run/user/1000/pulse:/run/user/1000/pulse -v /home/paul:/home/paul netstorm
+# docker run -i --rm --net=host --ipc=host -v /tmp/.X11-unix/X0:/tmp/.X11-unix/X0 -v /run/user/1000/pulse:/run/user/1000/pulse -v /home/paul:/home/paul netstorm
 
 FROM m0elnx/ubuntu-32bit
 
